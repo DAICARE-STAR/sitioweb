@@ -1,0 +1,21 @@
+# Dependencias y builds
+node_modules/
+dist/
+.vite/
+.netlify/
+*.log
+npm-debug.log*
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Estado local de herramientas de IA
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store

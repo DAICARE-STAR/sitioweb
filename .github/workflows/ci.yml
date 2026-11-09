@@ -1,0 +1,23 @@
+# CI informativa: no frena el deploy. Solo push de ramas del repo; sin pull_request
+# para que ningún fork ejecute código en un runner propio. Las ramas claude/** de
+# sesiones en la nube no corren aquí: se verifican en la nube y al mergearlas en local.
+# Plantilla del sistema IA. Ajustar runs-on (ubuntu-latest o el runner propio) y los pasos.
+name: CI
+
+on:
+  push:
+    branches-ignore: ['claude/**']
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
