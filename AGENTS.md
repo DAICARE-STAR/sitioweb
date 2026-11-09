@@ -45,7 +45,7 @@ Leer antes de programar el archivo que corresponda a la tarea (`C:\Users\enzov\I
 Formato: `DCW-DEC-NN — fecha — decisión — qué la reabriría`.
 
 - DCW-DEC-01 — 2026-11-09 — Sitio de una página sin JavaScript, con CSP `default-src 'none'` y sin fuentes externas (pila del sistema: Georgia para títulos, system-ui para el cuerpo) — que el cliente pida formularios, analítica o su tipografía de marca.
-- DCW-DEC-02 — 2026-11-09 — Colores tomados de la publicidad del cliente: verde `#1F5F33`, verde profundo `#174A28`, dorado `#C8A24B` (solo gráfico), crema `#F6F2E8`. El dorado nunca va como texto sobre claro — que el cliente entregue un manual de marca.
-- DCW-DEC-03 — 2026-11-09 — Logos redibujados en SVG por la IA a partir de la publicidad (no había archivo original); el texto del logo usa fuentes del sistema, así que puede variar un poco entre equipos — que el cliente apruebe una versión con el texto convertido a trazos o entregue el original.
+- DCW-DEC-02 — 2026-11-09 — Colores medidos del logo original del cliente: verde #55614B, verde profundo #3B4434 (títulos), salvia #ACAF7F (hojas, solo gráfico), dorado #C8A24B (solo gráfico), crema #F6F2E8. El dorado nunca va como texto sobre claro — que el cliente entregue un manual de marca.
+- DCW-DEC-03 — 2026-11-09 — El sitio usa el logo original del cliente (marca/referencia-logo-cliente.jpg) recortado siguiendo su borde real, con fondo transparente, en marca/png/; los SVG redibujados de marca/ quedan solo como referencia — que el cliente entregue el archivo vectorial original.
 - DCW-DEC-04 — 2026-11-09 — Contacto solo por WhatsApp (302 350 7907) y redes (@somosdaicare); sin correo ni razón social hasta que el cliente los confirme — dato del cliente.
 - DCW-DEC-05 — 2026-11-09 — `www` redirige a `daicareintegral.com` (301); el CRM vivirá en `app.daicareintegral.com` — decisión del usuario.

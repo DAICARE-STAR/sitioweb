@@ -1,14 +1,15 @@
-/* DAI CARE Integral — hoja única del sitio. Colores derivados de la publicidad
-   del cliente (2026-11-09), pendientes de su aprobación. El dorado es solo
+/* DAI CARE Integral — hoja única del sitio. Colores medidos del logo original
+   del cliente (2026-11-09): verde #55614B, salvia #ACAF7F, dorado; pendientes de su aprobación. El dorado es solo
    gráfico: no se usa para texto sobre fondo claro (no llega a 4,5:1). */
 :root {
-  --verde: #1F5F33;
-  --verde-profundo: #174A28;
+  --verde: #55614B;
+  --verde-profundo: #3B4434;
   --dorado: #C8A24B;
+  --salvia: #ACAF7F;
   --crema: #F6F2E8;
   --blanco: #FFFFFF;
-  --texto: #1E2A22;
-  --texto-suave: #45534A;
+  --texto: #232A1F;
+  --texto-suave: #4A5243;
   --radio: 14px;
   --serif: Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;

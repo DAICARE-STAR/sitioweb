@@ -21,20 +21,22 @@ function contraste(a, b) {
 
 test('pares de texto y fondo pasan AA (4,5:1)', () => {
   const pares = [
-    ['#1E2A22', '#F6F2E8', 'texto sobre crema'],
-    ['#45534A', '#F6F2E8', 'texto suave sobre crema'],
-    ['#45534A', '#FFFFFF', 'texto suave sobre blanco'],
-    ['#174A28', '#F6F2E8', 'títulos sobre crema'],
-    ['#174A28', '#FFFFFF', 'títulos y botón claro sobre blanco'],
-    ['#FFFFFF', '#1F5F33', 'texto blanco sobre verde'],
-    ['#FFFFFF', '#174A28', 'botón verde al pasar'],
+    ['#232A1F', '#F6F2E8', 'texto sobre crema'],
+    ['#4A5243', '#F6F2E8', 'texto suave sobre crema'],
+    ['#4A5243', '#FFFFFF', 'texto suave sobre blanco'],
+    ['#3B4434', '#F6F2E8', 'títulos sobre crema'],
+    ['#3B4434', '#FFFFFF', 'títulos y botón claro sobre blanco'],
+    ['#FFFFFF', '#55614B', 'texto blanco sobre verde'],
+    ['#FFFFFF', '#3B4434', 'botón verde al pasar'],
   ]
   for (const [t, f, nombre] of pares) assert.ok(contraste(t, f) >= 4.5, `${nombre}: ${contraste(t, f).toFixed(2)}`)
 })
 
-test('el dorado no se usa como color de texto', () => {
+test('los colores del CSS son los del logo y el dorado no es texto', () => {
   const css = leer('sitio/estilos.css')
   assert.doesNotMatch(css, /(^|[;{\s])color:\s*var\(--dorado\)/m)
+  assert.match(css, /--verde: #55614B;/)
+  assert.doesNotMatch(css, /#1F5F33|#174A28/i)
 })
 
 test('las páginas no llevan scripts, manejadores en línea ni estilos en línea', () => {
