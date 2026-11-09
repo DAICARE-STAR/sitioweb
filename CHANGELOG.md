@@ -4,4 +4,5 @@ Formato: cada commit a `main` es un Paso `Mayor.Fase.Paso — descripción`. La 
 
 ## 0.1 — Arranque (2026-11-09)
 
-- 0.1.1 — Proyecto creado desde la plantilla del sistema IA.
+- 0.1.1 — Proyecto creado desde la plantilla del sistema IA. (824bc75)
+- 0.1.2 — Sitio: página única con cabecera, portada, tres servicios (Cuidado en casa, Procedimientos, Acompañamiento), contacto por WhatsApp y redes, 404 propio, robots y sitemap; logos SVG redibujados de la publicidad (monograma y casa, con versiones de un color y favicon); netlify.toml con CSP sin scripts y cabeceras de seguridad; servidor local y pruebas. Pendiente de aprobación del cliente; sin publicar.

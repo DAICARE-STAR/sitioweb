@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "daicare-sitioweb",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["tools/servidor-local.mjs", "5560"],
+      "port": 5560
+    }
+  ]
+}

@@ -4,13 +4,17 @@ Sitio público de DAI CARE Integral (daicareintegral.com): página estática con
 
 ## Cómo correrlo
 
-(completar)
+`node tools/servidor-local.mjs` y abrir http://localhost:5560 (sirve `sitio/` con las cabeceras de `netlify.toml`). Pruebas: `node --test "tests/*.test.mjs"`.
 
 ## Estructura
 
 | Ruta | Qué contiene |
 |---|---|
-| `docs/` | Documentación, glosario, flujo entre IA, handoffs viejos |
+| `sitio/` | Lo que publica Netlify: `index.html`, `404.html`, `estilos.css`, `img/`, `robots.txt`, `sitemap.xml` |
+| `marca/` | Logos SVG fuente (monograma, casa, versiones de un color, favicon), pendientes de aprobación del cliente |
+| `tools/` | Servidor local y lector de cabeceras de `netlify.toml` |
+| `tests/` | Contraste AA, sin scripts ni estilos en línea, enlaces, CSP y cabeceras |
+| `docs/` | Documentación, DNS (`dns.md`), glosario y flujo entre IA |
 
 ## Estado
 
